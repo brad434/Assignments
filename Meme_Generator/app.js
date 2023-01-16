@@ -7,19 +7,50 @@ form.addEventListener("submit", function(e){
     const topText = document.querySelector("#topTxt").value;
     const meme = document.querySelector(".meme");
 
-    console.log(url,topText,bottomText);
-    console.log(urlPhoto);
+    const container = document.createElement('div');
+    container.style.position = 'relative';
 
-    function urlPhoto(){
-        let image = document.createElement('img');
-        image.src = url;
-        meme.appendChild(image);
-    }
+    
+    let img = document.createElement('img');
+    img.src = url;
+    container.appendChild(img);
+    
 
-    function placeTopText(){
-        meme.appendChild = topText;
-    }
+    //TOP TEXT
+    let upText = document.createElement('div');
+    upText.textContent = topText;
+    upText.style.position = 'absolute';
+    upText.style.width = '100%';
+    upText.style.textAlign = 'center';
+    upText.style.top = 0;
+    upText.style.left = 0;
+    upText.style.fontSize = '2rem';
+    upText.style.backgroundColor = 'white';
 
-    urlPhoto();
-    placeTopText();
-})
+    container.appendChild(upText);
+    
+    //BOTTOM TEXT
+    let dwText = document.createElement('div');
+    dwText.textContent = bottomText;
+    dwText.style.position = 'absolute';
+    dwText.style.width = '400px';
+    dwText.style.textAlign = 'center';
+    dwText.style.bottom = 0;
+    // dwText.style.left = 0;
+    dwText.style.backgroundColor = 'white';
+    dwText.style.fontSize = '2rem';
+
+
+    container.appendChild(dwText);
+
+    //CLOSE BUTTON
+    const close = document.createElement('button');
+    close.setAttribute('id', 'closeButton');
+    close.textContent = 'Close';
+    close.addEventListener('click', function(){
+        container.remove();
+    })
+
+    container.appendChild(close);
+    meme.appendChild(container);
+});

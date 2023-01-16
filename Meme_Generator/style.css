@@ -45,6 +45,19 @@ form input {
     margin-top: 10px;
 }
 
+#closeButton {
+    /* text-align: center;
+    width: 300px;
+    padding-top: 10px; */
+
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
 /* ---------- MEME ---------------- */
 .meme-container{
     max-width: 100%;
