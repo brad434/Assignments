@@ -70,5 +70,7 @@ return newObj;
 /** Return a new object with a modified key and value. */
 
 function update(obj, key, val) {
-
+let newObj = {...obj};
+newobj[key] = val;
+return newObj;
 }
