@@ -70,3 +70,17 @@ const {middle: middleName = 'Roger Rabit'} = person;
 console.log(middleName); // 'Roger Rabit'
 
 //what the code above did was that it created a new var called middleName. Since the original obj does not contain a property called 'middle' we fall back to the default of Roger Rabit. 
+
+
+
+//--------------------------------------- FUNCTION DESCTRUCTURING -----------------------------
+
+const  
+
+
+// ----------------- SWAP ARRAY Elements -----------------
+
+let delicious = 'Mayo';
+let disgusting = 'BBQ Sauce';
+
+[disgusting, delicious] = [delicious, disgusting] // it does matter how to place them after the equal sign but make sure on the left side of the equal sign that its the opposite value. For example the first index is the opposite of the other array index at 0.
