@@ -1,3 +1,4 @@
+
 const form = document.querySelector("form");
 
 form.addEventListener("submit", function(e){
@@ -8,17 +9,17 @@ form.addEventListener("submit", function(e){
     const meme = document.querySelector(".meme");
 
     const container = document.createElement('div');
-    container.style.position = 'relative';
-
-    
-    let img = document.createElement('img');
-    img.src = url;
-    container.appendChild(img);
+    container.classList.add('memeContainer');
     
 
     //TOP TEXT
     let upText = document.createElement('div');
     upText.textContent = topText;
+    upText.classList.add('topText');
+
+    container.appendChild(upText);
+    
+    /*
     upText.style.position = 'absolute';
     upText.style.width = '100%';
     upText.style.textAlign = 'center';
@@ -26,12 +27,36 @@ form.addEventListener("submit", function(e){
     upText.style.left = 0;
     upText.style.fontSize = '2rem';
     upText.style.backgroundColor = 'white';
+*/
 
-    container.appendChild(upText);
+    let img = document.createElement('img');
+    img.src = url;
+    container.appendChild(img);
+    
+
+    /*
+    //TOP TEXT
+    let upText = document.createElement('div');
+    upText.textContent = topText;
+    upText.classList.add('topText');
+    /*
+    upText.style.position = 'absolute';
+    upText.style.width = '100%';
+    upText.style.textAlign = 'center';
+    upText.style.top = 0;
+    upText.style.left = 0;
+    upText.style.fontSize = '2rem';
+    upText.style.backgroundColor = 'white';
+*/
     
     //BOTTOM TEXT
     let dwText = document.createElement('div');
+    dwText.classList.add('botText');
     dwText.textContent = bottomText;
+
+    container.appendChild(dwText);
+
+    /*
     dwText.style.position = 'absolute';
     dwText.style.width = '400px';
     dwText.style.textAlign = 'center';
@@ -39,9 +64,8 @@ form.addEventListener("submit", function(e){
     // dwText.style.left = 0;
     dwText.style.backgroundColor = 'white';
     dwText.style.fontSize = '2rem';
+*/
 
-
-    container.appendChild(dwText);
 
     //CLOSE BUTTON
     const close = document.createElement('button');
@@ -54,3 +78,4 @@ form.addEventListener("submit", function(e){
     container.appendChild(close);
     meme.appendChild(container);
 });
+

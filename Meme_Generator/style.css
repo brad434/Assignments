@@ -8,8 +8,15 @@ body {
     background-color: grey;
     width: 100%;
 }
+
 .container {
-    background-color: antiquewhite;   
+    background-color: antiquewhite;
+    text-align: center;   
+}
+
+.container img{
+    max-width: 300px;
+    height: auto;
 }
 
 form {
@@ -48,7 +55,8 @@ form input {
 #closeButton {
     /* text-align: center;
     width: 300px;
-    padding-top: 10px; */
+    padding-top: 10px; 
+    */
 
     width: 100px;
     padding: 10px;
@@ -58,10 +66,14 @@ form input {
     margin-top: 50px;
 }
 
+
 /* ---------- MEME ---------------- */
-.meme-container{
-    max-width: 100%;
-    max-height: 100%;
+
+.memeContainer{
+    /* background-color: white; */
+    text-align: center; 
+    /* height: auto; */
+    
 }
 
 .meme {
@@ -72,16 +84,23 @@ form input {
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 10px;
-    
-    
-    /* position: absolute;
-    left: 50%;
-    width: 700px;
-    height: 700px; */
-    /* overflow-x: hidden; */
-    
+    margin-bottom: 10px;
 }
 
-#topTxt {
-    border: 1px solid rgb(255, 255, 255);
+.topText {
+    background-color: white;
+    padding: 5px;
+    /* position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px #000;
+    color:white; */
+}
+
+.botText {
+    background-color: white;
+    padding: 5px;
+    /* background-color: red; */
 }
