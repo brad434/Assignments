@@ -1,0 +1,111 @@
+table{
+    border-collapse: separate;
+}
+
+/* td::before {
+    content: "";
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+} */
+
+td {
+    /* border: 1px solid black;
+    padding: 30px 30px;
+    box-sizing: border-box; */
+
+    border: 1px solid black;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+}
+
+tr{
+    /* border: 1px solid black;
+    max-width: 50px;
+    max-height: 50px; */
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    /* position: relative; */
+    /* width: 50px;
+    height: 50px; 
+    background-color: red;
+    border-radius: 50%; */
+    /* padding: 20px; */
+}
+/* ----------- First Row Edits -------------------------------------------*/
+
+.first {
+    border: 1px dotted rgb(167, 18, 18);
+}
+
+.first:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.second {
+    border: 1px dotted rgb(167, 18, 18);
+}
+
+.second:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.third {
+    border: 1px dotted rgb(167, 18, 18);
+}
+
+.third:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.fourth {
+    border: 1px dotted rgb(167, 18, 18);
+}
+
+.fourth:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.fifth {
+    border: 1px dotted rgb(167, 18, 18);
+}
+
+.fifth:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.sixth {
+    border: 1px dotted rgb(167, 18, 18);
+}
+
+.sixth:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+.seventh {
+    border: 1px dotted rgb(167, 18, 18);
+}
+
+.seventh:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
