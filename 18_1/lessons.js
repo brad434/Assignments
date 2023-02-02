@@ -1,3 +1,4 @@
+/*
 //HOW JQUERY WORKS
 
 //will print out a node of the H1 in an array
@@ -10,7 +11,7 @@ $('h1').text()
 $('hi').text('HTML')
 
 /* --------- JQUERY CSS AND CLASSES -------------------*/
-
+/*
 $('a') //will output all of the links on the page "[a,a,a,a,a,a,a,a,a]" like so.
 
 //this will print of the exact value of the css color 
@@ -31,6 +32,7 @@ $('a').css(tealColorStyle);
 
 
 /*-------- For class -------------*/
+/*
 //same like regular javascript to add a class to the DOM we link the css class to the DOM h1
 $('h1') //[h1#firstHeading.firstHeading, preObject...] . A jquery object.
 
@@ -42,6 +44,7 @@ $('img').toggleClass('highlight'); // this can be used to toggle the css
 
 
 /*-------------- JQUERY Method Chaining --------------- */
+/*
 //Instead of 
 let todoContainer = document.querySelector("#todo-container");
 todoContainer.style.color = "red";
@@ -53,6 +56,7 @@ $("#todo-container").css("color", "red").text("Look at this!").on("click", funct
 
 
 /* ------------ JQuery Traversal ------------------------- */
+/*
 
 $('li').eq(3) //gives use a single element from the jquery object. For example it gives us the 4th place of the index of Li
 const $specialLi = $('li').eq(3); //place it inside of a const variable 
@@ -66,6 +70,7 @@ $('ul').children() // this will look for direct children with that 'ul' . which 
 $('li').find('a')//looks for whatever element you need
 
 /*----------------creating , appending , removing element w/JQUERY---------------------- */
+/*
 //instead of using document and creatingElement
 document.createElement('h1');
 //let practice grabbing the 'ul' and working to add li's to it
@@ -83,3 +88,51 @@ $('hi').remove()
 
 //to add an element before or after an element. For example after a 'li'
 $('ul').after('<b>This element is place underneath the li code</b>');
+
+
+/* ---------------------JQUERY EVENTS ------------------------------------------------------ */
+//basic event listern would be to have all images be clicked on and have an alert that says "hello"
+// $('img').click(function(){
+//     alert('Hello!');
+// });
+
+//JQUERY'S "on()" works similarly to addEventListener. It lets you specify the type of event to listen for.
+//prints when item with is "submit" is clicked 
+$("#submit").on("click", function(){
+    console.log("Another click!");
+});
+
+//alerts when ANY button is clicked on
+$('button').on('click', function(){
+    console.log("Button was clicked!");
+});
+
+//this code will change the color of the img border when the mouse is over the image
+// $('img').on('mouseenter', function(){
+//     $(this).css('border', '10px solid purple');
+// });
+//now this code will remove the border when clicked
+// $('img').on('click', function(){
+//     $(this).remove();
+// });
+
+//this code will add an input field inside of the form when the button(#add-input) is clicked on
+$('#add-input').on('click', function(){
+    $('form').append('<input type="text"/>');
+});
+
+//Code below will prefill the added value because it is focusing on all input within the form. There is parameter called 'input'
+$('form').on('focus', 'input', function(){
+    $(this).val('Please fill out field');
+});
+
+
+/*------------------- JQUERY ANIMATION -----------------------------------*/
+$('img').on('click', function(){
+    $(this).animate({
+        opacity: 0,
+        width: '50px', //DO NOT ANIMATE WIDTH EVER (POOR PERFORMANCE)
+    }, 3000, function(){
+        $(this).remove();
+    })
+})
