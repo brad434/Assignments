@@ -75,3 +75,11 @@ $('ul').append('<li class="highlights"> This is how to create css in JQuery! </l
 $('li').append('<input type="checkbox" />'); // add checkbox's at the end of the li's
 $('li').prepend('<input type="checkbox" />'); // add checkbox's at the beginning of the li's
 
+//this line of code will CREATE a html code (h1) then add a color to the element then append it or add it to the end of the element of choice
+$('<h1>Hello World!</h1>').css('color', 'purple').appendTo('span'); //create an element inline also.
+
+//to remove an element in Jquery
+$('hi').remove()
+
+//to add an element before or after an element. For example after a 'li'
+$('ul').after('<b>This element is place underneath the li code</b>');
