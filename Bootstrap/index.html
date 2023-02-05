@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Website</title>
+    <!-- Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Main style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Ends -->
+    <main class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <img src="./visa-3082813_1920.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-5">
+                    <h1 class="mt-5">TagLine</h1>
+                    <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam consequatur
+                        numquam est itaque culpa praesentium error autem iure voluptates veniam ea natus aliquid eius,
+                        inventore nesciunt, ducimus, quibusdam provident earum.</p>
+                    <button type="button" class="btn btn-primary mt-5"> Click Here!</button>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col">
+                    <div class="bg-secondary text-white my-3 py-3 card text-center">
+                        <div class="card-body">
+                            <h2 class="text-center">Title of Service</h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, quidem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="./pexels-elly-fairytale-3822170.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="text-center">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-primary">Read More</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./pexels-anna-shvets-5262942 (1).jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                                <div class="text-center">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-primary">Read More</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./pexels-evelina-zhu-5413680.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                                <div class="text-center">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-primary">Read More</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form action="">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" placeholder="my@email.com" class="form-control" />
+                        <!-- <div class="form-floating my-5"> -->
+                        <label for="name" class="form-label mt-2">Name:</label>
+                        <input type="name" id="name" placeholder="e.g. David" class="form-control" />
+                        <!-- </div> -->
+                        <label for="subject" class="form-label mt-2">Subject:</label>
+                        <select name="subject" id="subject" class="form-control">
+                            <option value="pricing">Pricing</option>
+                            <option value="technical" selected>Technical</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <!-- <div class="form-floating my-5"> -->
+                        <label for="query" class="form-label mt-2">Write a message:</label>
+                        <textarea name="query" id="query" style="height: 150px" class="form-control"
+                            placeholder="Write a message" cols="30" rows="10"></textarea>
+
+                        <!-- </div> -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!-- 
+    format for bootstrap should always be 
+    <container>
+        <row>
+            <col>
+
+    col (columns) have a total width of 12. So if you want the whole row to have a full length of the container you would use "col-12" or just "col". However if you want to specify your width of the container you would use "col-5" for that one column. If there are 2 or more columns you will have to make sure they all equal to 12. For example one column is set to "col-6" and the next column in the row will be set to "col-6"... See below:
+
+            <div class="col-6">
+                <div class="box"></div>
+            </div>
+            <div class="col-6">
+                <div class="box"></div>
+            </div>
+
+    The breakpoint (xs, sm, md, lg, xl, xxl) determines how the columns will change based on the breakpoint. Ex:
+    //this will create 4 columns when the breakpoint is Large or higher 
+            <div class="col-lg-4">
+                <div class="box"></div>
+            </div>
+
+    Also we can add a gap in between for the X or Y axis. It goes from numbers 0 - 8. For example
+    <div class="container">        
+        <div class="row row-cols-2 gy-5">
+        </div>
+    </div>
+
+    You can also give the gap a breakpoint as well like so (gy-lg-5) or (gx-md-3) 
+    <div class="container">        
+        <div class="row row-cols-2 gy-lg-5">
+        </div>
+    </div>
+
+    You can always set the g for an all around or both X and Y
+        <div class="row row-cols-2 g-3">
+-->
+
+<!-- Table notes
+On your table element if you add the class="table " , your table element will have its own grid 
+    <table class="table">
+        ....
+    </table>
+
+Table element can also have a class called "table-success" or "table-primary" to change the color of the table
+-->
